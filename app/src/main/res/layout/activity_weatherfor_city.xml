@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weatherforCity">
+
+
+    <TextView
+        android:id="@+id/weatherForCity_tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Toronto, CA"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherForCity_iv_weatherImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/weatherForCity_tv_temprature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="18 C"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherForCity_tv_city" />
+
+    <TextView
+        android:id="@+id/weatherForCity_tv_feelsLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Feels like: 17 C"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherForCity_tv_temprature" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/weatherForCity_iv_weatherImage"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/weatherForCity_tv_temprature"
+        app:layout_constraintTop_toBottomOf="@id/weatherForCity_tv_city"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintBottom_toBottomOf="@id/weatherForCity_tv_temprature"
+        />
+
+    <TextView
+        android:id="@+id/weatherForCity_tv_wind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Wind: 3.09 m/s"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherForCity_tv_feelsLike"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/weatherForCity_tv_humidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Humidity: 51%"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weatherForCity_tv_wind"
+        android:layout_marginTop="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
